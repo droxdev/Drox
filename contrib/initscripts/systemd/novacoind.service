@@ -1,0 +1,11 @@
+[Unit]
+Description=Droxne daemon serivce
+After=network.target
+
+[Service]
+Type=simple
+User=Droxne
+ExecStart=/opt/Droxne/Droxned
+
+[Install]
+WantedBy=multi-user.target

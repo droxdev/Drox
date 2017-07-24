@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# PROVIDE: Droxne
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# Droxne_enable (bool): Set to NO by default. Set this variable to YES if you want to enable Droxne service.
+# Droxne_config (path): Set to /usr/local/etc/Droxne.conf by default.
+# Droxne_user:  The user account Droxne daemon runs as. It uses 'root' user by default.
+# Droxne_group: The group account Droxne daemon runs as. It uses 'wheel' group by default.
+# Droxne_datadir (str): Default to "/var/db/Droxne". Base data directory.
+
+. /etc/rc.subr
+
+name=Droxne
+rcvar=Droxne_enable
+
+: ${Droxne_enable:=NO}
+: ${Droxne_config=/usr/local/etc/Droxne.conf}
+: ${Droxne_datadir=/var/db/Droxne}
+: ${Droxne_user="root"}
+: ${Droxne_group="wheel"}
+
+required_files=${Droxne_config}
+command=/usr/local/bin/Droxned
+Droxne_chdir=${Droxne_datadir}
+pidfile="${Droxne_datadir}/Droxned.pid"
+stop_cmd=Droxne_stop
+command_args="-conf=${Droxne_config} -datadir=${Droxne_datadir} -daemon -pid=${pidfile}"
+start_precmd="${name}_prestart"
+
+Droxne_create_datadir()
+{
+	echo "Creating data directory"
+	eval mkdir -p ${Droxne_datadir}
+	[ $? -eq 0 ] && chown -R ${Droxne_user}:${Droxne_group} ${Droxne_datadir}
+}
+
+Droxne_prestart()
+{
+	if [ ! -d "${Droxne_datadir}/." ]; then
+		Droxne_create_datadir || return 1
+	fi
+}
+
+Droxne_requirepidfile()
+{
+	if [ ! "0`check_pidfile ${pidfile} ${command}`" -gt 1 ]; then
+		echo "${name} not running? (check $pidfile)."
+		exit 1
+	fi
+}
+
+Droxne_stop()
+{
+    Droxne_requirepidfile
+
+	echo "Stopping ${name}."
+	eval ${command} -conf=${Droxne_config} -datadir=${Droxne_datadir} stop
+	wait_for_pids ${rc_pid}
+}
+
+load_rc_config $name
+run_rc_command "$1"

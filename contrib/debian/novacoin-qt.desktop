@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Droxne
+Comment=Droxne P2P Cryptocurrency
+Comment[ru]=Droxne, P2P криптовалюта
+Comment[fr]=Droxne, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Droxne, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/Droxne-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/Droxne80.xpm
+MimeType=x-scheme-handler/Droxne;
+Categories=Office;
