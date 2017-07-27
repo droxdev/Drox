@@ -1,2 +1,8 @@
-RPC Port: 41242
-Network Port: 41241
+## DROXNE 
+
+
+## Coin Specifications :- 
+80 Million Coins
+Proof-Of-Stake
+Interest Per Year 40% 
+
