@@ -2,7 +2,8 @@
 
 
 ## Coin Specifications :- 
-80 Million Coins
-Proof-Of-Stake
-Interest Per Year 40% 
+80 Million Coins.
+Proof-Of-Stake.
+Interest Per Year 40%.
+
 
