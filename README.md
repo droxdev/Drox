@@ -6,6 +6,8 @@
 ## -Proof-Of-Stake.
 ## -Interest Per Year 40%.
 
+## - 1000 COINS PER DRXNE
+
 ### Get the source code
 
 Git and GitHub is used to maintain the source code.
@@ -24,6 +26,8 @@ cmake --build .        # Build all default targets.
 Development Schedule
 ===========================
 Development is primarily focused on Droxne .
+
+
 
 
 
