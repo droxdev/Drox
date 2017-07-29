@@ -27,7 +27,14 @@ Development Schedule
 ===========================
 Development is primarily focused on Droxne .
 
+## AIR DROP
 
+AIRDROP DETAILS 
+
+EMAIL ID : droxairdrop@gmail.com
+Airdrop details 
+BITCOINTALK ACCOUNT NAME 
+DRXNE ADDRESS
 
 
 
