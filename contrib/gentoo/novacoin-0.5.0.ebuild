@@ -4,7 +4,7 @@ LANGS="en ru"
 
 inherit db-use eutils fdo-mime gnome2-utils kde4-functions qt4-r2
 
-DB_VER="4.8"
+DB_VER="4.8" 
 
 DESCRIPTION="Droxne - a hybrid PoW+PoS energy efficient p2p-cryptocurrency and electronic payment system."
 HOMEPAGE="https://novaco.in/"
