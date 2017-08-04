@@ -9,7 +9,7 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-  </ItemGroup>
+  </ItemGroup> 
   <ItemGroup>
     <ClCompile Include="..\..\src\addrman.cpp">
       <Filter>Source Files</Filter>
