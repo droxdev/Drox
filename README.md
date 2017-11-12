@@ -25,21 +25,21 @@ cmake --build .        # Build all default targets.
 ```
 
 ## Development Schedule
-===========================
-Development is primarily focused on  
--Develop proprietary games for gaming platform
--Build API and graphics to support merchants and gaming websites
--Enhance consensus methodology with upgrade to hybrid PoW/PoS 
--Develop socal media channels: Medium, Twitter, Instagram, Discord, Slack, Facebook, Reddit
+
+Development is primarily focused on  <br>
+-Develop proprietary games for gaming platform <br>
+-Build API and graphics to support merchants and gaming websites <br>
+-Enhance consensus methodology with upgrade to hybrid PoW/PoS <br>
+-Develop socal media channels: Medium, Twitter, Instagram, Discord, Slack, Facebook, Reddit <br>
 -Broaden distribution of ownership with PoW mining, faucet and giveaways 
 
 ## AIR DROP
 
 AIRDROP DETAILS - completed
 
-Airdrop details 
-EMAIL ADDRESS
-BITCOINTALK ACCOUNT NAME 
+Airdrop details <br>
+EMAIL ADDRESS <br>
+BITCOINTALK ACCOUNT NAME <br> 
 DRXNE ADDRESS
 
 
