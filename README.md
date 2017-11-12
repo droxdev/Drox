@@ -2,16 +2,16 @@
 
 
 ## Coin Specifications :- 
-## -80 Million Coins.
-## -Proof-Of-Stake.
-## -Interest Per Year 40%.
+## -80 Million Coins
+## -Proof-Of-Stake
+## -Interest Per Year 40%
 ## -8MB Block size
 ## -2 min Block time
 
 
 ### Get the Source Code
 
-Git and GitHub is used to maintain the source code.
+Git and GitHub is used to maintain the source code https://github.com/droxdev/Drox
 
 ### Build
 
@@ -30,7 +30,7 @@ Development is primarily focused on  <br>
 -Develop proprietary games for gaming platform <br>
 -Build API and graphics to support merchants and gaming websites <br>
 -Enhance consensus methodology with upgrade to hybrid PoW/PoS <br>
--Develop socal media channels: Medium, Twitter, Instagram, Discord, Slack, Facebook, Reddit <br>
+-Develop socal media channels: Medium, Twitter, Instagram, Discord, Slack, Facebook, Reddit, Youtube <br>
 -Broaden distribution of ownership with PoW mining, faucet and giveaways 
 
 ## AIR DROP
